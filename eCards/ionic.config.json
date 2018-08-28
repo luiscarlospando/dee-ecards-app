@@ -1,0 +1,7 @@
+{
+  "name": "eCards",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
