@@ -1,8 +1,8 @@
 {
   "name": "eCards",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "Luis Carlos Pando (@mijo)",
+  "homepage": "https://luiscarlospando.net/",
   "private": true,
   "scripts": {
     "start": "ionic-app-scripts serve",
@@ -32,7 +32,8 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.2.0",
+    "@ionic/lab": "1.0.8",
     "typescript": "~2.6.2"
   },
-  "description": "An Ionic project"
+  "description": "App móvil para envío de eCards"
 }
