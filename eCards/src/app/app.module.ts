@@ -4,13 +4,13 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { InicioPage } from '../pages/inicio/inicio';
+import { EcardsPage } from '../pages/ecards/ecards';
+import { EcardPage } from '../pages/ecards/ecard/ecard';
 import { EnviarPage } from '../pages/enviar/enviar';
 import { AcercaDePage } from '../pages/acerca-de/acerca-de';
+import { FavoritosPage } from '../pages/favoritos/favoritos';
+import { AjustesPage } from '../pages/ajustes/ajustes';
 import { TabsPage } from '../pages/tabs/tabs';
-// import { AboutPage } from '../pages/about/about';
-// import { ContactPage } from '../pages/contact/contact';
-// import { HomePage } from '../pages/home/home';
-// import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,13 +19,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     InicioPage,
+    EcardsPage,
+    EcardPage,
     EnviarPage,
     AcercaDePage,
+    FavoritosPage,
+    AjustesPage,
     TabsPage
-    // AboutPage,
-    // ContactPage,
-    // HomePage,
-    // TabsPage
   ],
   imports: [
     BrowserModule,
@@ -35,13 +35,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     InicioPage,
+    EcardsPage,
+    EcardPage,
     EnviarPage,
     AcercaDePage,
+    FavoritosPage,
+    AjustesPage,
     TabsPage
-    // AboutPage,
-    // ContactPage,
-    // HomePage,
-    // TabsPage
   ],
   providers: [
     StatusBar,

@@ -14,5 +14,27 @@
 
 
 <ion-content padding>
+  <form (ngSubmit)="onAddPlace(f.value)" #f="ngForm">
+    <ion-item>
+      <ion-label>Title</ion-label>
+      <ion-input type="text" name="title" ngModel required></ion-input>
+    </ion-item>
+    <button ion-button full type="submit" [disabled]="!f.valid">Enviar</button>
+  </form>
 
+  <hr>
+
+  <p>Selecciona la eCard que desees enviar.</p>
+
+  <ion-card>
+    <img src="../assets/imgs/birthday-party.jpg" />
+    <ion-card-content>
+      <ion-card-title>
+        Feliz Cumpleaños
+      </ion-card-title>
+      <p>
+        Envía una eCard para desear un feliz cumpleaños.
+      </p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

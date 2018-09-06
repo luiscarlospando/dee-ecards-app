@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { InicioPage } from '../inicio/inicio';
-import { EnviarPage } from '../enviar/enviar';
+import { EcardsPage } from '../ecards/ecards';
 import { AcercaDePage } from '../acerca-de/acerca-de';
 
 // import { AboutPage } from '../about/about';
@@ -14,7 +14,7 @@ import { AcercaDePage } from '../acerca-de/acerca-de';
 export class TabsPage {
 
   tab1Root = InicioPage;
-  tab2Root = EnviarPage;
+  tab2Root = EcardsPage;
   tab3Root = AcercaDePage;
 
   constructor() {

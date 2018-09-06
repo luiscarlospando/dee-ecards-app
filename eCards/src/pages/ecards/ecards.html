@@ -1,0 +1,46 @@
+<!--
+  Generated template for the EcardsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>eCards</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <p>Selecciona la eCard que desees enviar.</p>
+  
+  <ion-card>
+    <img src="../assets/imgs/birthday-party.jpg" />
+    <ion-card-content>
+      <ion-card-title>
+        Feliz Cumpleaños
+      </ion-card-title>
+      <p>
+        Envía una eCard para desear un feliz cumpleaños.
+      </p>
+
+      <button (click)="onLoadEnviarEcard('Feliz Cumpleaños eCard')" ion-button full>Seleccionar</button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="../assets/imgs/mothers-day.jpeg" />
+    <ion-card-content>
+      <ion-card-title>
+        Feliz Día de la Madre
+      </ion-card-title>
+      <p>
+        Envía una eCard para desear un feliz día de la madre.
+      </p>
+  
+      <button (click)="onLoadEnviarEcard('Día de la Madre eCard')" ion-button full>Seleccionar</button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -7,6 +7,11 @@
 <ion-header>
 
   <ion-navbar>
+    <ion-buttons end>
+      <button ion-button (click)="onLoadEcards()">
+        <ion-icon name="send"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>Inicio</ion-title>
   </ion-navbar>
 
@@ -14,23 +19,7 @@
 
 
 <ion-content padding>
-  <p>Por favor elecciona una opción</p>
-
-  <ion-card>
-    <ion-card-header>
-      Enviar eCard
-    </ion-card-header>
-    <ion-card-content>
-      Enviar una eCard.
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      Acerca de
-    </ion-card-header>
-    <ion-card-content>
-      Ir a la página Acerca de.
-    </ion-card-content>
-  </ion-card>
+  <h1>DEE eCards v0.0.1</h1>
+  <hr>
+  <button ion-button color="primary" (click)="onLoadEcards()" full>eCards</button>
 </ion-content>
