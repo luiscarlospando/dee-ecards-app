@@ -14,6 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'favoritos.html',
 })
 export class FavoritosPage {
+  titulo:string = "Favoritos";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

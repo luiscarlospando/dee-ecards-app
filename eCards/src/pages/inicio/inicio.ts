@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { EcardsPage } from '../ecards/ecards';
+import { Ecard } from '../../data/ecard.interface';
+import ecardsData from '../../data/ecards';
 
 /**
  * Generated class for the InicioPage page.
@@ -14,10 +16,14 @@ import { EcardsPage } from '../ecards/ecards';
   selector: 'page-inicio',
   templateUrl: 'inicio.html',
 })
-export class InicioPage {
+export class InicioPage implements OnInit {
+  titulo:string = "Inicio";
   selectedItem: any;
   icons: string[];
   items: Array<{ title: string, note: string, icon: string }>;
+
+  // Creamos estructura de datos, 'coleccionEcards' de tipo objeto (misma estructura que en ecards.ts)
+  coleccionEcards: { categoria: string, ecards: Ecard[], icono: string }[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     
@@ -29,6 +35,10 @@ export class InicioPage {
 
   onLoadEcards() {
     this.navCtrl.push(EcardsPage); // Ponemos la página EcardsPage en el navigation stack
+  }
+
+  ngOnInit() {
+    this.coleccionEcards = ecardsData; // Agregamos nuestro data estático y lo asignamos a nuestra estructura de datos
   }
 
 }

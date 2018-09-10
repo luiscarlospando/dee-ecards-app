@@ -14,7 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
     templateUrl: 'ecard.html',
 })
 export class EcardPage implements OnInit {
-    nombre: string;
+    nombre:string;
     
     constructor(public navCtrl: NavController, public navParams: NavParams) {
 

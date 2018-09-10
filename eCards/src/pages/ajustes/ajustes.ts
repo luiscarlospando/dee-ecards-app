@@ -14,6 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'ajustes.html',
 })
 export class AjustesPage {
+  titulo:string = "Ajustes";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

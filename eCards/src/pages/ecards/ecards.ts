@@ -15,6 +15,7 @@ import { EcardPage } from './ecard/ecard';
   templateUrl: 'ecards.html',
 })
 export class EcardsPage {
+  titulo:string = "eCards";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
