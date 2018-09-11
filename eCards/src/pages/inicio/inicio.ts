@@ -18,24 +18,23 @@ import ecardsData from '../../data/ecards';
 })
 export class InicioPage implements OnInit {
   titulo:string = "Inicio";
-  selectedItem: any;
-  icons: string[];
-  items: Array<{ title: string, note: string, icon: string }>;
+  // selectedItem: any;
+  // icons: string[];
+  // items: Array<{ title: string, note: string, icon: string }>;
 
-  // Creamos estructura de datos, 'coleccionEcards' de tipo objeto (misma estructura que en ecards.ts)
-  coleccionEcards: { categoria: string, ecards: Ecard[], icono: string }[];
+  coleccionEcards: { categoria: string, ecards: Ecard[], icono: string }[]; // Creamos estructura de datos, 'coleccionEcards' de tipo objeto (misma estructura que en ecards.ts)
+  ecardsPage = EcardsPage; // Especificamos la página que queremos pushear (ver inicio.html)
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InicioPage');
   }
 
-  onLoadEcards() {
-    this.navCtrl.push(EcardsPage); // Ponemos la página EcardsPage en el navigation stack
-  }
+  // onLoadEcards() {
+  //   this.navCtrl.push(EcardsPage); // Ponemos la página EcardsPage en el navigation stack
+  // }
 
   ngOnInit() {
     this.coleccionEcards = ecardsData; // Agregamos nuestro data estático y lo asignamos a nuestra estructura de datos

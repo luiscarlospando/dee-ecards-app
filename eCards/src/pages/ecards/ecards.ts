@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { EcardPage } from './ecard/ecard';
+import { Ecard } from '../../data/ecard.interface';
 
 /**
  * Generated class for the EcardsPage page.
@@ -14,20 +14,23 @@ import { EcardPage } from './ecard/ecard';
   selector: 'page-ecards',
   templateUrl: 'ecards.html',
 })
-export class EcardsPage {
+export class EcardsPage implements OnInit {
   titulo:string = "eCards";
+  grupoEcard: { categoria: string, ecards: Ecard[], icono: string }; // Creamos lugar donde recibir datos de otras páginas
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad EcardsPage');
+  ngOnInit() {
+    this.grupoEcard = this.navParams.data;
   }
 
-  onLoadEnviarEcard(tipoEcard: string) {
-    this.navCtrl.push(EcardPage, {
-      tipoEcard: tipoEcard
-    });
-  }
+  // Approach opcional
+  // ionViewDidLoad() {
+  //   console.log('ionViewDidLoad EcardsPage');
+
+  //   this.grupoEcard = this.navParams.data; // Recibimos datos de otra página
+  //   // IMPORTANTE: agregar operador elvis (?) al renderizar data en vistas
+  // }
 
 }

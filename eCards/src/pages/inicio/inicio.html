@@ -29,12 +29,15 @@
   <h3 text-center>Selecciona una categoría</h3>
 
   <ion-list>
-    <button ion-item *ngFor="let grupoEcard of coleccionEcards">
+    <button
+      ion-item *ngFor="let grupoEcard of coleccionEcards"
+      [navPush]="ecardsPage"
+      [navParams]="grupoEcard">
       <ion-icon [name]="grupoEcard.icono" item-left></ion-icon>
       <h3>{{ grupoEcard.categoria | uppercase }}</h3>
       <p>{{ grupoEcard.ecards.length }} eCards</p>
     </button>
   </ion-list>
 
-  <button ion-button color="primary" (click)="onLoadEcards()" full>eCards</button>
+  <!-- <button ion-button color="primary" (click)="onLoadEcards()" full>eCards</button> -->
 </ion-content>

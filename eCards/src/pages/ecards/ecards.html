@@ -7,14 +7,14 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{ titulo }}</ion-title>
+    <ion-title>{{ grupoEcard.categoria | uppercase }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <p>Selecciona la eCard que desees enviar.</p>
+  <!-- <p>Selecciona la eCard que desees enviar.</p>
   
   <ion-card>
     <img src="../assets/imgs/birthday-party.jpg" />
@@ -42,5 +42,5 @@
   
       <button (click)="onLoadEnviarEcard('Día de la Madre eCard')" ion-button full>Seleccionar</button>
     </ion-card-content>
-  </ion-card>
+  </ion-card> -->
 </ion-content>

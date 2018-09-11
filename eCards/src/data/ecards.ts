@@ -40,6 +40,27 @@ const ecardsData = [
             }
         ],
         icono: 'man'
+    },
+    {
+        categoria: 'Día de la Madre',
+        ecards: [
+            {
+                id: 7,
+                titulo: 'Todo lo que soy',
+                texto: 'Todo lo que soy y espero ser, se lo debo a la angelical solicitud de mi madre.'
+            },
+            {
+                id: 8,
+                titulo: 'El corazón de una madre',
+                texto: 'El corazón de una madre es el único capital del sentimiento que nunca quiebra, y con el cual se puede contar siempre y en todo tiempo con toda seguridad.'
+            },
+            {
+                id: 9,
+                titulo: 'Una madre perdona',
+                texto: 'Una madre perdona siempre; ha venido al mundo para esto.'
+            }
+        ],
+        icono: 'flower'
     }
 ]
 export default ecardsData;
