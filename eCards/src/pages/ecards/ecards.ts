@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { Ecard } from '../../data/ecard.interface';
 
 /**
@@ -18,7 +18,30 @@ export class EcardsPage implements OnInit {
   titulo:string = "eCards";
   grupoEcard: { categoria: string, ecards: Ecard[], icono: string }; // Creamos lugar donde recibir datos de otras páginas
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
+  }
+
+  onAgregarAFavoritos(ecardSeleccionada: Ecard) {
+    const alert = this.alertCtrl.create({
+      title: 'Agregar a Favoritos',
+      subTitle: '¿Deseas agregar esta eCard a tus Favoritos?',
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          handler: data => {
+            console.log('Acción cancelada');
+          }
+        },
+        {
+          text: 'Aceptar',
+          handler: data => {
+            console.log('Acción confirmada');
+          }
+        }
+      ]
+    });
+    alert.present();
   }
 
   ngOnInit() {

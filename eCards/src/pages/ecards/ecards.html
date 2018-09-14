@@ -14,33 +14,28 @@
 
 
 <ion-content padding>
-  <!-- <p>Selecciona la eCard que desees enviar.</p>
+  <p>Selecciona la eCard que desees enviar.</p>
   
-  <ion-card>
-    <img src="../assets/imgs/birthday-party.jpg" />
+  <ion-card *ngFor="let ecard of grupoEcard.ecards; let i = index">
+    <ion-card-header>
+      <img src="../assets/imgs/birthday-party.jpg" />
+    </ion-card-header>
     <ion-card-content>
       <ion-card-title>
-        Feliz Cumpleaños
+        {{ i + 1 }}. {{ ecard.titulo }}
       </ion-card-title>
       <p>
-        Envía una eCard para desear un feliz cumpleaños.
+        {{ ecard.texto }}
       </p>
-
-      <button (click)="onLoadEnviarEcard('Feliz Cumpleaños eCard')" ion-button full>Seleccionar</button>
     </ion-card-content>
+    <ion-row>
+      <ion-col text-right>
+        <button
+          ion-button
+          icon-start
+          clear
+          (click)="onAgregarAFavoritos(ecard)"><ion-icon name="heart"></ion-icon></button>
+      </ion-col>
+    </ion-row>
   </ion-card>
-
-  <ion-card>
-    <img src="../assets/imgs/mothers-day.jpeg" />
-    <ion-card-content>
-      <ion-card-title>
-        Feliz Día de la Madre
-      </ion-card-title>
-      <p>
-        Envía una eCard para desear un feliz día de la madre.
-      </p>
-  
-      <button (click)="onLoadEnviarEcard('Día de la Madre eCard')" ion-button full>Seleccionar</button>
-    </ion-card-content>
-  </ion-card> -->
 </ion-content>
