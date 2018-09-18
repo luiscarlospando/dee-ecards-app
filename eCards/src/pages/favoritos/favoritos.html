@@ -14,5 +14,22 @@
 
 
 <ion-content padding>
-
+  <ion-card *ngFor="let ecard of ecards; let i = index">
+    <ion-card-header>
+      <img src="../assets/imgs/birthday-party.jpg" />
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-title>
+        {{ i + 1 }}. {{ ecard.titulo }}
+      </ion-card-title>
+      <p>
+        {{ ecard.texto }}
+      </p>
+    </ion-card-content>
+    <ion-row>
+      <ion-col text-right>
+        <button ion-button icon-start clear (click)="onAgregarAFavoritos(ecard)"><ion-icon name="heart"></ion-icon></button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
 </ion-content>

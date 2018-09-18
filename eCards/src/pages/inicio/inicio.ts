@@ -18,12 +18,8 @@ import ecardsData from '../../data/ecards';
 })
 export class InicioPage implements OnInit {
   titulo:string = "Inicio";
-  // selectedItem: any;
-  // icons: string[];
-  // items: Array<{ title: string, note: string, icon: string }>;
-
-  coleccionEcards: { categoria: string, ecards: Ecard[], icono: string }[]; // Creamos estructura de datos, 'coleccionEcards' de tipo objeto (misma estructura que en ecards.ts)
-  ecardsPage = EcardsPage; // Especificamos la página que queremos pushear (ver inicio.html)
+  coleccionEcards: { categoria: string, ecards: Ecard[], icono: string }[]; // Creamos estructura de datos, 'coleccionEcards' de tipo objeto
+  ecardsPage = EcardsPage; // Especificamos la página que queremos pushear con [NavPush] (ver inicio.html)
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

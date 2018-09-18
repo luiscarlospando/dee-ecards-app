@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { Ecard } from '../../data/ecard.interface';
+import { EcardsService } from '../../services/ecards';
+import { EcardPage } from '../ecards/ecard/ecard';
 
 /**
  * Generated class for the EcardsPage page.
@@ -18,7 +20,13 @@ export class EcardsPage implements OnInit {
   titulo:string = "eCards";
   grupoEcard: { categoria: string, ecards: Ecard[], icono: string }; // Creamos lugar donde recibir datos de otras páginas
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
+  ecardPage = EcardPage; // Especificamos la página que queremos pushear con [NavPush] (ver ecards.html)
+  
+  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController, private ecardsService: EcardsService) {
+  }
+
+  onSeleccionarEcard() {
+    this.navCtrl.push(this.ecardPage);
   }
 
   onAgregarAFavoritos(ecardSeleccionada: Ecard) {
@@ -37,6 +45,8 @@ export class EcardsPage implements OnInit {
           text: 'Aceptar',
           handler: data => {
             console.log('Acción confirmada');
+
+            this.ecardsService.agregarEcardAFavoritos(ecardSeleccionada);
           }
         }
       ]

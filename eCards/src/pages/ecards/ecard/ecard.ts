@@ -14,8 +14,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
     templateUrl: 'ecard.html',
 })
 export class EcardPage implements OnInit {
-    nombre:string;
-    
+    ecard: { id: string, titulo: string, texto: string }; // Creamos lugar donde recibir datos de otras páginas
+
     constructor(public navCtrl: NavController, public navParams: NavParams) {
 
     }
@@ -25,7 +25,7 @@ export class EcardPage implements OnInit {
     }
 
     ngOnInit() {
-        this.nombre = this.navParams.get('tipoEcard');
+        this.ecard = this.navParams.data;
     }
 
     onBackToHome() {

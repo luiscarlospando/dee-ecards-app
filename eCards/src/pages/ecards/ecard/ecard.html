@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{ nombre }}</ion-title>
+    <ion-title>{{ ecard.titulo | uppercase }}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,20 +15,32 @@
 
 <ion-content padding>
 
-  <form (ngSubmit)="onAddPlace(f.value)" #f="ngForm">
-    <ion-item>
-      <ion-label>Nombre {{ nombre }}</ion-label>
-      <ion-input type="text" name="nombre" ngModel required></ion-input>
-      <hr>
-      <ion-label>Email</ion-label>
-      <ion-input type="text" name="email" ngModel required></ion-input>
-      <hr>
-      <ion-label>Mensaje</ion-label>
-      <ion-input type="textarea" name="mensaje" ngModel required></ion-input>
-    </ion-item>
-    <button ion-button full type="submit" [disabled]="!f.valid">Enviar</button>
-  </form>
+  <p>¿A quién enviarás la eCard?</p>
 
-  <button ion-button (click)="onBackToHome()">Regresar al inicio</button>
+  <ion-item>
+    <ion-label floating>Nombre</ion-label>
+    <ion-input type="text" name="nombre" ngModel required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Tu Email</ion-label>
+    <ion-input type="email" name="email" ngModel required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Enviar a</ion-label>
+    <ion-input type="email" name="enviara" ngModel required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Mensaje</ion-label>
+    <ion-input type="textarea" name="mensaje" ngModel required></ion-input>
+  </ion-item>
+
+  <button ion-button full (click)="enviarEcard()">Enviar</button>
+
+  <hr>
+
+  <button ion-button full (click)="onBackToHome()">Regresar al inicio</button>
 
 </ion-content>

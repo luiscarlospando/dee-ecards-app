@@ -7,6 +7,7 @@ export class EcardsService {
     // Métodos
     agregarEcardAFavoritos(ecard: Ecard) {
         this.ecardsFavoritas.push(ecard);
+        console.log(this.ecardsFavoritas);
     };
 
     quitarEcardDeFavoritos(ecard: Ecard) {
@@ -15,7 +16,7 @@ export class EcardsService {
             return ecardElemento.id == ecard;
         });
 
-        // Ahora si eliminamos sabiendo la posición del elemento usando el método splce
+        // Ahora si eliminamos sabiendo la posición del elemento usando el método splice
         this.ecardsFavoritas.splice(posicion, 1);
     };
 
