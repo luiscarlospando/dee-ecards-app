@@ -22,7 +22,7 @@ export class EcardPage implements OnInit {
     email: string;
     enviara: string;
     mensaje: string;
-    endpoint: string;
+    private endpoint: string = "http://interactivesolutions.info/dee-ecards-app/enviar.php";
 
     http: Http;
 
@@ -44,7 +44,7 @@ export class EcardPage implements OnInit {
         // this.mensaje = "¡Hola, esta es una prueba enviada desde la app de Ecards!";
 
         // asignamos nuestro endpoint
-        this.endpoint = "http://interactivesolutions.info/dee-ecards-app/enviar.php";
+        // this.endpoint = "http://interactivesolutions.info/dee-ecards-app/enviar.php";
     }
 
     enviarEcard() {
