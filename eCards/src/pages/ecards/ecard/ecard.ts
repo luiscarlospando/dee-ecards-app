@@ -17,7 +17,7 @@ import { EnviarEcardService } from '../../../services/enviar-ecard'; // Importam
     providers: [EnviarEcardService]
 })
 export class EcardPage {
-    ecard: { id: string, titulo: string, texto: string }; // Creamos lugar donde recibir datos de otras páginas
+    ecard: { id: string, titulo: string, texto: string, img: string }; // Creamos lugar donde recibir datos de otras páginas
     titulo: string = "Enviar eCard";
     message: Email = {};
 
