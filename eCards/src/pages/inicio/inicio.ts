@@ -33,7 +33,7 @@ export class InicioPage implements OnInit {
   // }
 
   ngOnInit() {
-    this.coleccionEcards = ecardsData; // Agregamos nuestro data estático y lo asignamos a nuestra estructura de datos
+    this.coleccionEcards = ecardsData; // Agregamos nuestro data estático y lo asignamos a nuestra estructura de datos al inicializar
   }
 
 }
