@@ -17,16 +17,17 @@ import { EnviarEcardService } from '../../../services/enviar-ecard'; // Importam
     providers: [EnviarEcardService]
 })
 export class EcardPage {
-    ecard: { id: string, titulo: string, texto: string, img: string }; // Creamos lugar donde recibir datos de otras páginas
     titulo: string = "Enviar eCard";
+    ecard: { id: string, titulo: string, texto: string, img: string }; // Creamos lugar donde recibir datos de otras páginas
     message: Email = {};
 
     constructor(public navCtrl: NavController, public navParams: NavParams, private enviarEcardService: EnviarEcardService) {
-
+        this.ecard = this.navParams.data; // Recibimos datos de página anterior y almacenamos en ecard
     }
 
     ionViewDidLoad() {
         console.log('ionViewDidLoad EcardPage');
+        console.log(this.ecard);
     }
 
     onEnviarEcard(message: Email) {

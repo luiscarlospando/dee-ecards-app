@@ -3,4 +3,5 @@ export interface Email {
     email: string;
     enviara: string;
     mensaje: string;
+    imagen: string;
 }

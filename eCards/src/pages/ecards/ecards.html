@@ -18,7 +18,7 @@
   
   <ion-card *ngFor="let ecard of grupoEcard.ecards; let i = index">
     <ion-card-header>
-      <img src="../assets/imgs/birthday-party.jpg" />
+      <img src="{{ ecard.img }}" />
     </ion-card-header>
     <ion-card-content>
       <ion-card-title>
@@ -30,7 +30,11 @@
     </ion-card-content>
     <ion-row>
       <ion-col>
-        <button ion-button full (click)="onSeleccionarEcard()">Seleccionar</button>
+        <button
+          ion-button
+          full
+          [navPush]="ecardPage"
+          [navParams]="ecard">Seleccionar</button>
       </ion-col>
     </ion-row>
     <ion-row>

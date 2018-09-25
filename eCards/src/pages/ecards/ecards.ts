@@ -25,9 +25,14 @@ export class EcardsPage implements OnInit {
   
   }
 
-  onSeleccionarEcard() {
-    this.navCtrl.push(this.ecardPage);
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad EcardsPage');
+    console.log(this.grupoEcard);
   }
+
+  // onSeleccionarEcard() {
+  //   this.navCtrl.push(this.ecardPage, this.navParams.data.ecards);
+  // }
 
   onAgregarAFavoritos(ecardSeleccionada: Ecard) {
     const alert = this.alertCtrl.create({
@@ -55,7 +60,7 @@ export class EcardsPage implements OnInit {
   }
 
   ngOnInit() {
-    this.grupoEcard = this.navParams.data;
+    this.grupoEcard = this.navParams.data; // Recibimos datos de página anterior y almacenamos en grupoEcard
   }
 
   // Approach opcional

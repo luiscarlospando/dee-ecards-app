@@ -22,10 +22,12 @@ export class InicioPage implements OnInit {
   ecardsPage = EcardsPage; // Especificamos la página que queremos pushear con [NavPush] (ver inicio.html)
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InicioPage');
+    console.log(this.coleccionEcards);
   }
 
   // onLoadEcards() {
