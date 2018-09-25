@@ -32,6 +32,7 @@ export class EcardPage {
 
     onEnviarEcard(message: Email) {
         this.enviarEcardService.sendEmail(message.value);
+        console.log(this.enviarEcardService.sendEmail(message.value));
     }
 
     onBackToHome() {
