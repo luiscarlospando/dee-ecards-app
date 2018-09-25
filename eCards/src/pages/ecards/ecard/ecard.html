@@ -38,10 +38,8 @@
       <ion-input type="textarea" name="mensaje" ngModel required></ion-input>
     </ion-item>
 
-    <ion-item>
-      <ion-label floating>Attachment</ion-label>
-      <ion-input type="text" name="imagen" [(ngModel)]="ecard.img" required></ion-input>
-    </ion-item>
+    <ion-input type="hidden" name="titulo" [(ngModel)]="ecard.titulo" required></ion-input>
+    <ion-input type="hidden" name="imagen" [(ngModel)]="ecard.img" required></ion-input>
 
     <button type="submit" ion-button full [disabled]="!message.valid">Enviar</button>
   </form>
