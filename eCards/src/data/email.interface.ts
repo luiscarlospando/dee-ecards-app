@@ -1,8 +1,8 @@
 export interface Email {
-    nombre: string;
-    email: string;
-    enviara: string;
-    titulo: string;
+    nombreRemitente: string;
+    nombreDestinatario: string;
+    emailDestinatario: string;
+    nombreEcard: string;
     mensaje: string;
     imagen: string;
 }

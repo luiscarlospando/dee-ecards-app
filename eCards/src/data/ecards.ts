@@ -49,6 +49,12 @@ const ecardsData = [
                 titulo: 'Feliz Cumpleaños 3',
                 texto: 'Me gustaría mucho que supieras que hasta que no te conocí no pude disfrutar de la satisfacción de tener a un buen amigo a mi lado. Hoy quiero ser yo el que esté a tu lado para disfrutar y celebrar contigo este día tan especial. Feliz cumpleaños, ¡Gracias por tantos años de amistad!',
                 img: 'http://interactivesolutions.info/dee-ecards-app/assets/imgs/birthday-party.jpg'
+            },
+            {
+                id: 7,
+                titulo: 'Feliz Cumpleaños Animado',
+                texto: 'Me gustaría mucho que supieras que hasta que no te conocí no pude disfrutar de la satisfacción de tener a un buen amigo a mi lado. Hoy quiero ser yo el que esté a tu lado para disfrutar y celebrar contigo este día tan especial. Feliz cumpleaños, ¡Gracias por tantos años de amistad!',
+                img: 'http://interactivesolutions.info/dee-ecards-app/assets/imgs/feliz-cumpleanos-animado.gif'
             }
         ],
         icono: 'man'
@@ -57,19 +63,19 @@ const ecardsData = [
         categoria: 'Día de la Madre',
         ecards: [
             {
-                id: 7,
+                id: 8,
                 titulo: 'Todo lo que soy',
                 texto: 'Todo lo que soy y espero ser, se lo debo a la angelical solicitud de mi madre.',
                 img: 'http://interactivesolutions.info/dee-ecards-app/assets/imgs/mothers-day.jpeg'
             },
             {
-                id: 8,
+                id: 9,
                 titulo: 'El corazón de una madre',
                 texto: 'El corazón de una madre es el único capital del sentimiento que nunca quiebra, y con el cual se puede contar siempre y en todo tiempo con toda seguridad.',
                 img: 'http://interactivesolutions.info/dee-ecards-app/assets/imgs/mothers-day.jpeg'
             },
             {
-                id: 9,
+                id: 10,
                 titulo: 'Una madre perdona',
                 texto: 'Una madre perdona siempre; ha venido al mundo para esto.',
                 img: 'http://interactivesolutions.info/dee-ecards-app/assets/imgs/mothers-day.jpeg'
