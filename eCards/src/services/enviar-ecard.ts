@@ -5,7 +5,7 @@ import { Http, RequestOptions, Headers } from "@angular/http";
 
 @Injectable()
 export class EnviarEcardService {
-    public emailURL = 'http://interactivesolutions.info/dee-ecards-app/enviar.php';
+    public emailURL = 'http://discoveryenlaescuela.com/dee-ecards-app/enviar.php';
 
     constructor(private http: Http, private navCtrl: NavController, private alertCtrl: AlertController) {
 
