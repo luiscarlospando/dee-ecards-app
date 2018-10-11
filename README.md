@@ -1,5 +1,5 @@
 # dee-ecards-app
-App móvil para envío de eCards.
+App móvil de envío de eCards de Discovery en la Escuela.
 
 ---
-&copy; 2018 Discovery Communications, LLC. Todos los derechos reservados.
+Copyright &copy; 2018 Discovery Communications, Inc. Todos los derechos reservados.
