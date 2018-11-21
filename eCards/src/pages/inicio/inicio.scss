@@ -3,5 +3,26 @@ page-inicio {
         width: 100%;
         float: left;
         text-align: center;
+        background-color: #00b9f1;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 10px 0;
+    }
+
+    // Lista de categorías
+    .item-ios,
+    .item-md,
+    .item-wp {
+        background-color: transparent;
+    }
+
+    .item > ion-icon:first-child,
+    .item-inner > ion-icon:first-child {
+        background-color: #00c5a9;
+        border-radius: 50%;
+        color: #00b9f1;
+        text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+        width: 50px;
+        padding: 10px;
     }
 }

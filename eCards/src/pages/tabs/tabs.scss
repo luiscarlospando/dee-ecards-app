@@ -1,0 +1,15 @@
+.tabs-md,
+.tabs-ios,
+.tabs-wp {
+    .tabbar {
+        background-color: #55d5f4;
+    }
+
+    .tab-button[aria-selected=true] {
+        color: #ffffff;
+
+        .tab-button-icon {
+            color: #ffffff;
+        }
+    }
+}

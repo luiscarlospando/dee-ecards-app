@@ -14,3 +14,41 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.header {
+    .toolbar {
+        .toolbar-background {
+            background-color: #55d5f4;
+        }
+
+        .toolbar-title-md,
+        .toolbar-title-ios,
+        .toolbar-title-wp {
+            color: #fff;
+        }
+
+        .bar-button-default-md,
+        .bar-button-clear-md-default,
+        .bar-button-md-default,
+        .bar-button-default-ios,
+        .bar-button-clear-ios-default,
+        .bar-button-ios-default,
+        .bar-button-default-wp,
+        .bar-button-clear-wp-default,
+        .bar-button-wp-default {
+            color: #fff;
+        }
+    }
+}
+
+.content {
+    background: url('../assets/imgs/background.svg');
+    background-color: #fff;
+    background-size: cover;
+
+    .item-ios,
+    .item-md,
+    .item-wp {
+        background-color: transparent;
+    }
+}
