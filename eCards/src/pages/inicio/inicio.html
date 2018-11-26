@@ -33,7 +33,8 @@
       ion-item *ngFor="let grupoEcard of coleccionEcards"
       [navPush]="ecardsPage"
       [navParams]="grupoEcard">
-      <ion-icon [name]="grupoEcard.icono" item-left></ion-icon>
+      <img class="icono" src="../assets/imgs/iconos/{{ grupoEcard.icono }}.svg" item-left>
+      <!-- <ion-icon [name]="grupoEcard.icono" item-left></ion-icon> -->
       <h3>{{ grupoEcard.categoria | uppercase }}</h3>
       <p>{{ grupoEcard.ecards.length }} eCards</p>
     </button>

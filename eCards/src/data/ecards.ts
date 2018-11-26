@@ -27,7 +27,7 @@ const ecardsData = [
                 img: 'http://interactivesolutions.info/dee-ecards-app/assets/imgs/birthday-party.jpg'
             }
         ],
-        icono: 'woman'
+        icono: 'estrella'
     },
     {
         categoria: 'Cumpleaños para un amigo',
@@ -57,7 +57,7 @@ const ecardsData = [
                 img: 'http://interactivesolutions.info/dee-ecards-app/assets/imgs/feliz-cumpleanos-animado.gif'
             }
         ],
-        icono: 'man'
+        icono: 'corona'
     },
     {
         categoria: 'Día de la Madre',
@@ -81,7 +81,7 @@ const ecardsData = [
                 img: 'http://interactivesolutions.info/dee-ecards-app/assets/imgs/mothers-day.jpeg'
             }
         ],
-        icono: 'flower'
+        icono: 'foco'
     }
 ]
 export default ecardsData;
