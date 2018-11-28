@@ -34,7 +34,7 @@ export class EcardPage {
     onEnviarEcard(message: Email) {
         const alert = this.alertCtrl.create({
             title: '¿Estás seguro?',
-            subTitle: '¿Deseas enviar esta eCard a la persona que especificaste?',
+            subTitle: 'Por favor confirma que deseas enviar la eCard.',
             buttons: [
                 {
                     text: 'Cancelar',
@@ -53,6 +53,10 @@ export class EcardPage {
             ]
         });
         alert.present();
+    }
+
+    onBackToPrev() {
+        this.navCtrl.pop();
     }
 
     onBackToHome() {

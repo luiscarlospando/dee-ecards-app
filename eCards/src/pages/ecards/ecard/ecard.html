@@ -15,15 +15,10 @@
 
 <ion-content padding>
 
-  <p>¿A quién enviarás la eCard "{{ ecard.titulo }}"?</p>
+  <p>¿A quién enviarás la eCard?<!--"{{ ecard.titulo }}"--></p>
 
   <form (ngSubmit)="onEnviarEcard(message)" #message="ngForm">
     <ion-list>
-      <ion-item>
-        <ion-label floating>Tu nombre</ion-label>
-        <ion-input type="text" name="nombreRemitente" ngModel required></ion-input>
-      </ion-item>
-
       <ion-item>
         <ion-label floating>¿Cómo se llama la persona?</ion-label>
         <ion-input type="text" name="nombreDestinatario" ngModel required></ion-input>
@@ -39,15 +34,39 @@
         <ion-input type="textarea" name="mensaje" ngModel required></ion-input>
       </ion-item>
 
+      <ion-item>
+        <ion-label floating>Tu nombre</ion-label>
+        <ion-input type="text" name="nombreRemitente" ngModel required></ion-input>
+      </ion-item>
+
       <ion-input type="hidden" name="nombreEcard" [(ngModel)]="ecard.titulo" required></ion-input>
       <ion-input type="hidden" name="imagen" [(ngModel)]="ecard.img" required></ion-input>
     </ion-list>
 
-    <button type="submit" ion-button full [disabled]="!message.valid">Enviar</button>
+    <button type="submit" ion-button full [disabled]="!message.valid">Enviar <ion-icon name="send"></ion-icon></button>
   </form>
 
   <hr>
 
-  <button ion-button full (click)="onBackToHome()">Regresar al inicio</button>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <ion-buttons end>
+          <button ion-button full (click)="onBackToHome()">
+            <ion-icon name="home"></ion-icon>
+            Inicio
+          </button>
+        </ion-buttons>
+      </ion-col>
+      <ion-col col-6>
+        <ion-buttons end>
+          <button ion-button full (click)="onBackToPrev()">
+            <ion-icon name="arrow-back"></ion-icon>
+            Elegir otra
+          </button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>

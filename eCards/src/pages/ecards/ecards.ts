@@ -17,7 +17,7 @@ import { EcardPage } from '../ecards/ecard/ecard';
   templateUrl: 'ecards.html',
 })
 export class EcardsPage implements OnInit {
-  titulo:string = "eCards";
+  titulo: string = "eCards";
   grupoEcard: { categoria: string, ecards: Ecard[], icono: string }; // Creamos lugar donde recibir datos de otras páginas
   ecardPage = EcardPage; // Especificamos la página que queremos pushear con [NavPush] (ver ecards.html)
   
