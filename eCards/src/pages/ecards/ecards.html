@@ -18,7 +18,11 @@
   
   <ion-card *ngFor="let ecard of grupoEcard.ecards; let i = index">
     <ion-card-header>
-      <img src="{{ ecard.img }}" />
+      <a href="#"
+      [navPush]="ecardPage"
+      [navParams]="ecard">
+        <img src="{{ ecard.img }}" />
+      </a>
     </ion-card-header>
     <ion-card-content>
       <!-- <ion-card-title>

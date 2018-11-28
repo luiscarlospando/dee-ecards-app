@@ -26,7 +26,7 @@
 
       <ion-item>
         <ion-label floating>¿Cuál es el email de la persona?</ion-label>
-        <ion-input type="email" name="emailDestinatario" ngModel required></ion-input>
+        <ion-input type="email" name="emailDestinatario" pattern="[A-Za-z0-9._%+-]{2,}@[a-zA-Z-_.]{2,}[.]{1}[a-zA-Z]{2,}" ngModel required></ion-input>
       </ion-item>
 
       <ion-item>
