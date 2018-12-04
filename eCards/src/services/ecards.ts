@@ -1,7 +1,7 @@
 import { Ecard } from "../data/ecard.interface";
 
 export class EcardsService {
-    // Lugar donde guardar eCards Favoritas
+    // Lugar donde guardar E-cards Favoritas
     private ecardsFavoritas: Ecard[] = [];
 
     // Métodos
@@ -12,8 +12,9 @@ export class EcardsService {
 
     quitarEcardDeFavoritos(ecard: Ecard) {
         const posicion = this.ecardsFavoritas.findIndex((ecardElemento: Ecard) => {
-            // Checamos si el elemento que pasamos a la función findIndex coincide con la eCard que queremos quitar
-            return ecardElemento.id == ecard;
+            // Checamos si el elemento que pasamos a la función findIndex coincide con la E-card que queremos quitar
+            // return ecardElemento.id == ecard;
+            return ecardElemento == ecard;
         });
 
         // Ahora si eliminamos sabiendo la posición del elemento usando el método splice

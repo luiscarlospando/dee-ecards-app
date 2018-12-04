@@ -17,7 +17,7 @@ import { EnviarEcardService } from '../../../services/enviar-ecard'; // Importam
     providers: [EnviarEcardService]
 })
 export class EcardPage {
-    titulo: string = "Enviar eCard";
+    titulo: string = "Enviar E-card";
     ecard: { id: string, titulo: string, texto: string, img: string }; // Creamos lugar donde recibir datos de otras páginas
     // message: Email = {};
     message: {
@@ -42,7 +42,7 @@ export class EcardPage {
     onEnviarEcard(message) {
         const alert = this.alertCtrl.create({
             title: '¿Estás seguro?',
-            subTitle: 'Por favor confirma que deseas enviar la eCard.',
+            subTitle: 'Por favor confirma que deseas enviar la E-card.',
             buttons: [
                 {
                     text: 'Cancelar',

@@ -17,7 +17,7 @@ import { EcardsService } from '../../services/ecards';
 })
 export class FavoritosPage {
   titulo:string = "Favoritos";
-  ecards:Ecard[]; // Declaramos variable donde almacenar eCards favoritas
+  ecards:Ecard[]; // Declaramos variable donde almacenar E-cards favoritas
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private ecardsService: EcardsService) {
   }
