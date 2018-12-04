@@ -1,5 +1,5 @@
 export interface Ecard {
-    id: string;
+    id: number;
     titulo: string;
     texto: string;
     img: string;
