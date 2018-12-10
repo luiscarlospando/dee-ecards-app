@@ -14,7 +14,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'acerca-de.html',
 })
 export class AcercaDePage {
-  titulo:string = "Acerca de";
+  
+  titulo: string = "Discovery en la Escuela Ecards v1.0.0";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
