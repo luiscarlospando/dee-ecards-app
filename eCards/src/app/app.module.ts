@@ -7,7 +7,7 @@ import { MyApp } from './app.component';
 import { InicioPage } from '../pages/inicio/inicio';
 import { EcardsPage } from '../pages/ecards/ecards';
 import { EcardPage } from '../pages/ecards/ecard/ecard';
-import { EnviarPage } from '../pages/enviar/enviar';
+// import { EnviarPage } from '../pages/enviar/enviar';
 import { AcercaDePage } from '../pages/acerca-de/acerca-de';
 import { FavoritosPage } from '../pages/favoritos/favoritos';
 import { AjustesPage } from '../pages/ajustes/ajustes';
@@ -23,7 +23,7 @@ import { EcardsService } from '../services/ecards';
     InicioPage,
     EcardsPage,
     EcardPage,
-    EnviarPage,
+    // EnviarPage,
     AcercaDePage,
     FavoritosPage,
     AjustesPage,
@@ -40,7 +40,7 @@ import { EcardsService } from '../services/ecards';
     InicioPage,
     EcardsPage,
     EcardPage,
-    EnviarPage,
+    // EnviarPage,
     AcercaDePage,
     FavoritosPage,
     AjustesPage,
