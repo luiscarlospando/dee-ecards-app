@@ -1,7 +1,7 @@
 import { Ecard } from "../data/ecard.interface";
 
 export class EcardsService {
-    // Lugar donde guardar E-cards Favoritas
+    // Lugar donde guardar eCards Favoritas
     private ecardsFavoritas: Ecard[] = [];
 
     // Métodos
@@ -12,7 +12,7 @@ export class EcardsService {
 
     quitarEcardDeFavoritos(ecard: Ecard) {
         const posicion = this.ecardsFavoritas.findIndex((ecardElemento: Ecard) => {
-            // Checamos si el elemento que pasamos a la función findIndex coincide con la E-card que queremos quitar
+            // Checamos si el elemento que pasamos a la función findIndex coincide con la eCard que queremos quitar
             // return ecardElemento.id == ecard;
             return ecardElemento == ecard;
         });

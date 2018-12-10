@@ -14,7 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'enviar.html',
 })
 export class EnviarPage {
-  titulo:string = "Enviar E-card";
+  titulo:string = "Enviar eCard";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

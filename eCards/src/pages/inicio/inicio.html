@@ -36,10 +36,10 @@
       <img class="icono" src="../assets/imgs/iconos/{{ grupoEcard.icono }}.svg" item-left>
       <!-- <ion-icon [name]="grupoEcard.icono" item-left></ion-icon> -->
       <h3>{{ grupoEcard.categoria | uppercase }}</h3>
-      <p *ngIf="grupoEcard.ecards.length === 1">{{ grupoEcard.ecards.length }} E-card</p>
-      <p *ngIf="grupoEcard.ecards.length != 1">{{ grupoEcard.ecards.length }} E-cards</p>
+      <p *ngIf="grupoEcard.ecards.length === 1">{{ grupoEcard.ecards.length }} eCard</p>
+      <p *ngIf="grupoEcard.ecards.length != 1">{{ grupoEcard.ecards.length }} eCards</p>
     </button>
   </ion-list>
 
-  <!-- <button ion-button color="primary" (click)="onLoadEcards()" full>E-cards</button> -->
+  <!-- <button ion-button color="primary" (click)="onLoadEcards()" full>eCards</button> -->
 </ion-content>

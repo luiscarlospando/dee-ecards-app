@@ -28,7 +28,7 @@ export class EnviarEcardService {
 
         let alertSuccess = () => {
             const alert = this.alertCtrl.create({
-                title: '¡La E-card se ha enviado correctamente!',
+                title: '¡La eCard se ha enviado correctamente!',
                 buttons: [
                     {
                         text: 'Aceptar',
@@ -45,7 +45,7 @@ export class EnviarEcardService {
 
         let alertError = () => {
             const alert = this.alertCtrl.create({
-                title: '¡Hubo un problema al enviar la E-card!',
+                title: '¡Hubo un problema al enviar la eCard!',
                 subTitle: 'Inténtalo de nuevo más tarde.',
                 buttons: [
                     {
