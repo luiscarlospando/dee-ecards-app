@@ -1,5 +1,6 @@
-# dee-ecards-app
-App móvil de envío de eCards de Discovery en la Escuela.
+# Discovery en la Escuela eCards
+
+Tarjetas para compartir con tus amigos o familiares, con el estilo único de Discovery en la Escuela.
 
 ---
-Copyright &copy; 2018 Discovery Communications, Inc. Todos los derechos reservados.
+Copyright &copy; 2018-2019 Discovery Communications, Inc. Todos los derechos reservados.
