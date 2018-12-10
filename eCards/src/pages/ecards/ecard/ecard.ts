@@ -41,7 +41,7 @@ export class EcardPage {
 
     onEnviarEcard(message) {
         const alert = this.alertCtrl.create({
-            title: 'Espera',
+            title: 'Espera un momento',
             subTitle: '¿Confirmas que deseas enviar la eCard?',
             buttons: [
                 {
