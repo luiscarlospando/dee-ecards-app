@@ -17,7 +17,7 @@ import { EcardPage } from '../ecards/ecard/ecard';
   templateUrl: 'ecards.html',
 })
 export class EcardsPage implements OnInit {
-  titulo: string = "Selecciona una E-card";
+  titulo: string = "Selecciona una eCard";
   grupoEcard: { categoria: string, ecards: Ecard[], icono: string }; // Creamos lugar donde recibir datos de otras páginas
   ecardPage = EcardPage; // Especificamos la página que queremos pushear con [NavPush] (ver ecards.html)
   
@@ -37,7 +37,7 @@ export class EcardsPage implements OnInit {
   onAgregarAFavoritos(ecardSeleccionada: Ecard) {
     const alert = this.alertCtrl.create({
       title: 'Agregar a Favoritos',
-      subTitle: '¿Deseas agregar esta E-card a tus favoritos?',
+      subTitle: '¿Deseas agregar esta eCard a tus favoritos?',
       buttons: [
         {
           text: 'Cancelar',
