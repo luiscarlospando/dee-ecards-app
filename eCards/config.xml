@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>eCards</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+<widget id="com.discoveryenlaescuela.ecards" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Discovery en la Escuela eCards</name>
+    <description>Tarjetas para compartir con tus amigos o familiares, con el estilo único de Discovery en la Escuela.</description>
+    <author email="info@movimiento-digital.com" href="http://movimiento-digital.com/">Movimiento Digital</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
