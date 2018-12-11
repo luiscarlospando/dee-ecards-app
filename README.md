@@ -5,4 +5,4 @@ Tarjetas para compartir con tus amigos o familiares, con el estilo único de Dis
 ![alt text](http://discoveryenlaescuela.com/dee-ecards-app/resources/feature_graphic.png)
 
 ---
-Copyright &copy; 2018-2019 Discovery Communications, Inc. Todos los derechos reservados.
+Copyright &copy; 2018 Discovery, Inc. Todos los derechos reservados.
