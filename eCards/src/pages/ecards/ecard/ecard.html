@@ -17,6 +17,12 @@
 
   <p>¿A quién enviarás la eCard?<!--"{{ ecard.titulo }}"--></p>
 
+  <ion-card>
+    <ion-card-header>
+        <img src="{{ ecard.img }}" />
+    </ion-card-header>
+  </ion-card>
+
   <form (ngSubmit)="onEnviarEcard(message)" #message="ngForm">
     <ion-list>
       <ion-item>
@@ -29,13 +35,13 @@
         <ion-input type="email" name="emailDestinatario" pattern="[A-Za-z0-9._%+-]{2,}@[a-zA-Z-_.]{2,}[.]{1}[a-zA-Z]{2,}" ngModel required></ion-input>
       </ion-item>
 
-      <ion-item>
+      <!-- <ion-item>
         <ion-label floating>
           Mensaje<br>
           <span ion-text color="gray-text">Máximo 140 caracteres</span>
         </ion-label>
         <ion-input type="textarea" name="mensaje" minlength="10" maxlength="140" ngModel required></ion-input>
-      </ion-item>
+      </ion-item> -->
 
       <ion-item>
         <ion-label floating>Tu nombre</ion-label>
