@@ -15,12 +15,10 @@
 
 <ion-content padding>
 
-  <p>¿A quién enviarás la eCard?<!--"{{ ecard.titulo }}"--></p>
+  <p text-center>¿A quién enviarás la eCard?<!--"{{ ecard.titulo }}"--></p>
 
   <ion-card>
-    <ion-card-header>
-        <img src="{{ ecard.img }}" />
-    </ion-card-header>
+    <img src="{{ ecard.img }}" />
   </ion-card>
 
   <form (ngSubmit)="onEnviarEcard(message)" #message="ngForm">

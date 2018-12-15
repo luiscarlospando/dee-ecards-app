@@ -14,41 +14,16 @@
 
 
 <ion-content padding>
-  <p>Selecciona la eCard que desees enviar.</p>
+  <p text-center>Selecciona la eCard que desees enviar.</p>
   
   <ion-card *ngFor="let ecard of grupoEcard.ecards; let i = index">
-    <ion-card-header>
-      <a href="#"
-      [navPush]="ecardPage"
-      [navParams]="ecard">
-        <img src="{{ ecard.img }}" />
-      </a>
-    </ion-card-header>
+    <a href="#"
+    [navPush]="ecardPage"
+    [navParams]="ecard">
+      <img src="{{ ecard.img }}" />
+    </a>
     <ion-card-content>
-      <!-- <ion-card-title>
-        {{ i + 1 }}. {{ ecard.titulo }}
-      </ion-card-title> -->
-      <!-- <p>
-        {{ ecard.texto }}
-      </p> -->
+      <button ion-button full [navPush]="ecardPage" [navParams]="ecard">Seleccionar</button>
     </ion-card-content>
-    <ion-row>
-      <ion-col>
-        <button
-          ion-button
-          full
-          [navPush]="ecardPage"
-          [navParams]="ecard">Seleccionar</button>
-      </ion-col>
-    </ion-row>
-    <!-- <ion-row>
-      <ion-col text-right>
-        <button
-          ion-button
-          icon-start
-          clear
-          (click)="onAgregarAFavoritos(ecard)"><ion-icon name="heart"></ion-icon></button>
-      </ion-col>
-    </ion-row> -->
   </ion-card>
 </ion-content>
